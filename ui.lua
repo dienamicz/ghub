@@ -347,7 +347,7 @@ do
                     BackgroundColor3 = Theme.BackgroundColor,
                     BorderSizePixel = 0,
                     Position = UDim2.new(1, 300, 1, -30),
-                    Size = UDim2.new(0, 150, 0, 50),
+                    Size = UDim2.new(0, 300, 0, 50),
                     BackgroundTransparency = NotificationTransparency,
                     AnchorPoint = Vector2.new(1, 1)
                 }, {
@@ -402,7 +402,7 @@ do
                 local TitleObj = Holder['NotificationTitle']
                 local TextObj = Holder['NotificationText']
                 local TextSize = TextService:GetTextSize(Text, 14, Enum.Font.Gotham, Vector2.new(300, math.huge))
-                Holder.Size = UDim2.new(0, 300, 0, TextSize.Y + 30)
+                Holder.Size = UDim2.new(0, 150, 0, TextSize.Y + 30)
                 TextObj.Size = UDim2.new(0, 300, 0, TextSize.Y)
                 if Amount > 1 then
                     local PreviousSizes = 0
